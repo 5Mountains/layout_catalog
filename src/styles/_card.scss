@@ -1,25 +1,28 @@
 .card {
   width: 200px;
   padding: 15px 14px;
-  display: flex;
-  flex-direction: column;
   background: $white;
   border-radius: 5px;
-  @include border(#f3f3f3);
-
-  &--gap {
-    margin-bottom: 50px;
-  }
+  @include border(1px, $lightGrey);
 
   &__photo {
-    width: 160px;
-    height: 134px;
-    margin: 15px 5px 45px;
+    width: 166px;
+    height: 156px;
+    margin: 0 auto 38px;
   }
 
   &__image {
     width: 100%;
     height: 100%;
+    @include border(3px,  $white);
+    border-radius: 5px 5px 0 0;
+    padding: 12px 0 4px;
+    @include transition;
+
+    &:hover {
+      @include border(3px, $lightGrey);
+      transform: scale(1.2);
+    }
   }
 
   &__title {
@@ -33,8 +36,9 @@
   }
 
   &__rating {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    align-items: end;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     padding-bottom: 20px;
   }
@@ -45,9 +49,10 @@
   }
 
   &__price {
-    display: flex;
+    display: grid;
+    align-items: end;
+    grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: flex-end;
     padding-bottom: 20px;
   }
 
@@ -56,7 +61,7 @@
   }
 
   &__purchase {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -66,7 +71,8 @@
     @include font(14px, 16px, 700);
     background: $blueCyan;
     color: $white;
-    @include border($blueCyan);
+    @include border(1px, $blueCyan);
+    @include transition;
 
     &:hover {
       background: $white;

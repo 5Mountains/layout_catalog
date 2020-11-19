@@ -20,7 +20,8 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   &__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
@@ -46,8 +47,9 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-column-gap: 48px;
+    grid-row-gap: 50px;
   }
 }

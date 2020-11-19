@@ -1,24 +1,18 @@
 .nav__list {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav__item {
-  margin-left: 20px;
-
-  &:first-child {
-    margin-left: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 20px;
 }
 
 .nav__link {
   position: relative;
   min-height: 60px;
-  display: flex;
+  display: grid;
   align-items: center;
   text-transform: uppercase;
   color: inherit;
   @include font(12px, 14px, 500);
+  @include transition;
 
   &:hover {
     color: $blueCyan;
