@@ -46,7 +46,7 @@ body {
   &__container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 40px 50px;
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-column-gap: 48px;
