@@ -1,14 +1,10 @@
 @mixin font($size: 11px, $height: 14px, $weight: 400) {
-  font-family: Roboto, sans-serif;
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
 }
 
-@mixin border($size, $color) {
-  border: $size solid $color;
-}
-
-@mixin transition {
-  transition: 1s ease;
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
 }

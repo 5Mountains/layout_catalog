@@ -1,0 +1,107 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: $cardWidth;
+  padding: 15px 14px;
+
+  background: $white;
+  border-radius: 5px;
+  border: 1px solid $lightGrey;
+
+  &--gap {
+    margin-bottom: $cardColumnGap;
+  }
+
+  &__photo {
+    width: $imageWidth;
+    height: $imageHeight;
+    margin: 0 auto 38px;
+    padding: 12px 0 4px;
+
+    border: 3px solid transparent;
+    border-radius: 4px 4px 0 0;
+
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $lightGrey;
+    }
+  }
+
+  &__title {
+    padding-bottom: 5px;
+
+    @include font(12px, 15px, 500);
+  }
+
+  &__identity {
+    padding-bottom: 15px;
+
+    @include font(11px, 13px);
+  }
+
+  &__rating {
+<<<<<<< HEAD:src/styles/_card.scss
+    display: grid;
+    align-items: end;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+=======
+    @include flexBetween;
+    align-items: flex-end;
+>>>>>>> smooth-changes:src/styles/card.scss
+    padding-bottom: 20px;
+  }
+
+  &__feedback,
+  &__cost {
+    @include font(11px, 13px);
+  }
+
+  &__price {
+<<<<<<< HEAD:src/styles/_card.scss
+    display: grid;
+    align-items: end;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+=======
+    @include flexBetween;
+    align-items: flex-end;
+>>>>>>> smooth-changes:src/styles/card.scss
+    padding-bottom: 20px;
+  }
+
+  &__amount {
+    @include font(16px, 19px, 700);
+  }
+
+  &__purchase {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: $buttonWidth;
+    min-height: $buttonHeight;
+
+    @include font(14px, 16px, 700);
+    text-transform: uppercase;
+    color: $white;
+<<<<<<< HEAD:src/styles/_card.scss
+    @include border(1px, $blueCyan);
+    @include transition;
+=======
+
+    background-color: $blueCyan;
+    border-radius: 5px;
+    border: 1px solid $blueCyan;
+
+    transition: color 1s linear, background-color 1s linear;
+>>>>>>> smooth-changes:src/styles/card.scss
+
+    &:hover {
+      color: $blueCyan;
+
+      background-color: $white;
+    }
+  }
+}
