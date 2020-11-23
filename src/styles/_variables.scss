@@ -8,11 +8,13 @@ $headerHeight: 60px;
 $logoHeight: 40px;
 $logoWidth: 40px;
 
+$navListGap: 20px;
+
 $containerFrame: 40px;
 
 $cardWidth: 200px;
-$cardRowGup: 48px;
-$cardColumnGap: 50px;
+$cardColumnGup: 48px;
+$cardRowGap: 50px;
 
 $imageWidth: 166px;
 $imageHeight: 156px;
@@ -23,4 +25,4 @@ $starWidth: 15px;
 $buttonWidth: 170px;
 $buttonHeight: 40px;
 
-$containerWidth: $cardWidth * 4 + $cardRowGup * 3 + $containerFrame * 2;
+$containerWidth: $cardWidth * 4 + $cardColumnGup * 3 + $containerFrame * 2;

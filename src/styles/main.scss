@@ -22,12 +22,13 @@ body {
   background: $white;
 
   &__content {
-    @include flexBetween;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($cardWidth, 1fr));
+    grid-gap: $cardRowGap $cardColumnGup;
 
     &--container {
       max-width: $containerWidth;
-      margin: 0 auto;
+      margin: 0 auto 50px;
       padding: 0 $containerFrame;
     }
   }

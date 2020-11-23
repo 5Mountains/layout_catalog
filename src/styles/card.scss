@@ -8,10 +8,6 @@
   border-radius: 5px;
   border: 1px solid $lightGrey;
 
-  &--gap {
-    margin-bottom: $cardColumnGap;
-  }
-
   &__photo {
     width: $imageWidth;
     height: $imageHeight;
@@ -42,15 +38,8 @@
   }
 
   &__rating {
-<<<<<<< HEAD:src/styles/_card.scss
-    display: grid;
-    align-items: end;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-=======
     @include flexBetween;
     align-items: flex-end;
->>>>>>> smooth-changes:src/styles/card.scss
     padding-bottom: 20px;
   }
 
@@ -60,15 +49,8 @@
   }
 
   &__price {
-<<<<<<< HEAD:src/styles/_card.scss
-    display: grid;
-    align-items: end;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-=======
     @include flexBetween;
     align-items: flex-end;
->>>>>>> smooth-changes:src/styles/card.scss
     padding-bottom: 20px;
   }
 
@@ -86,22 +68,24 @@
     @include font(14px, 16px, 700);
     text-transform: uppercase;
     color: $white;
-<<<<<<< HEAD:src/styles/_card.scss
-    @include border(1px, $blueCyan);
-    @include transition;
-=======
 
     background-color: $blueCyan;
     border-radius: 5px;
     border: 1px solid $blueCyan;
 
     transition: color 1s linear, background-color 1s linear;
->>>>>>> smooth-changes:src/styles/card.scss
 
     &:hover {
       color: $blueCyan;
 
       background-color: $white;
     }
+  }
+}
+
+@media (max-width: 530px) {
+  .card {
+    justify-self: center;
+    align-self: center;
   }
 }
