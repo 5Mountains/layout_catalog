@@ -23,8 +23,9 @@ body {
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($cardWidth, 1fr));
+    grid-template-columns: repeat(auto-fill, $cardWidth);
     grid-gap: $cardRowGap $cardColumnGup;
+    justify-content: center;
 
     &--container {
       max-width: $containerWidth;

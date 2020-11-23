@@ -47,10 +47,10 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 804px) {
   .nav {
     &__list {
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(1, auto);
       grid-gap: ($navListGap / 2) $navListGap;
     }
 
