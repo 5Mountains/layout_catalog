@@ -22,6 +22,8 @@
   color: inherit;
   @include font(12px, 14px, 500);
 
+  transition: color 1s linear;
+
   &:hover {
     color: $blueCyan;
   }
@@ -38,7 +40,7 @@
 
     width: 100%;
     height: 4px;
-    
+
     background: $blueCyan;
     border-radius: 2px;
   }

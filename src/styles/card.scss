@@ -6,7 +6,7 @@
 
   background: $white;
   border-radius: 5px;
-  @include border($lightGrey);
+  border: 1px solid $lightGrey;
 
   &--gap {
     margin-bottom: $cardColumnGap;
@@ -15,7 +15,18 @@
   &__photo {
     width: $imageWidth;
     height: $imageHeight;
-    margin: 15px 5px 45px;
+    margin: 0 auto 38px;
+    padding: 12px 0 4px;
+
+    border: 3px solid transparent;
+    border-radius: 4px 4px 0 0;
+
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $lightGrey;
+    }
   }
 
   &__title {
@@ -62,14 +73,16 @@
     text-transform: uppercase;
     color: $white;
 
-    background: $blueCyan;
+    background-color: $blueCyan;
     border-radius: 5px;
-    @include border($blueCyan);
+    border: 1px solid $blueCyan;
+
+    transition: color 1s linear, background-color 1s linear;
 
     &:hover {
       color: $blueCyan;
 
-      background: $white;
+      background-color: $white;
     }
   }
 }
