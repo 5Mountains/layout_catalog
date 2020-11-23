@@ -1,11 +1,11 @@
 .stars {
   display: grid;
   grid-template-columns: repeat(5, auto);
+  grid-column-gap: 4px;
   height: $starHeight;
 
   &__star {
     width: $starWidth;
-    margin-right: 4px;
 
     background: url("/images/star-active.svg") center no-repeat;
 
