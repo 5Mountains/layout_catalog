@@ -1,0 +1,16 @@
+.main {
+  background: $white;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $cardWidth);
+    grid-gap: $cardRowGap $cardColumnGup;
+    justify-content: center;
+
+    &--container {
+      max-width: $containerWidth;
+      margin: 0 auto 50px;
+      padding: 0 $containerFrame;
+    }
+  }
+}
